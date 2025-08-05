@@ -329,8 +329,12 @@ body{
 
 
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 800px){
     .bio-page{
         flex-wrap: wrap;
+    }
+
+    .social-page, .about-page{
+        width: fit-content;
     }
 }
