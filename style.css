@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body{
+    background-color: #f5f6f7;
+}
+
+.bio-page{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+#post{
+    display: block;
+}
+
+#hashtags, #news, #live-feed{
+    display: none;
+}
+
+.social-page{
+    height: fit-content;
+    width: 250px;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin: 20px 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.social-page > input{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.social-page > p{
+    padding: 10px 0px;
+    font-weight: 400;
+}
+
+.social-page > p >span{
+    font-weight: 700;
+}
+
+.social-page > img{
+    margin: 10px 0px;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.social-page > h5{
+    font-size: 11px;
+    padding: 2px 0px;
+    color: #6b6b6b;
+}
+
+.social-page > h5 > span{
+    color: black;
+}
+
+.social-page > h6{
+    font-size: 14px;
+    padding: 5px 0px;
+    font-weight: 400;
+    color: #6b6b6b;
+}
+
+.post-page {
+    height: fit-content;
+    width: 700px;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin: 20px 20px;
+    border-radius: 10px;
+    padding: 20px;    
+}
+
+.explore{
+    border: 1px solid #ddd;
+}
+
+.explore-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.explore-types{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.explore-types > h3{
+    cursor: pointer;
+}
+
+.post-id{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    gap: 5px;
+}
+
+.reactions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 5px 20px;
+}
+
+.reactions > svg{
+    fill: #6b6b6b;
+    cursor: pointer;
+}
+
+.post-reactions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-id > img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.post-holder{
+    padding: 5px 10px;
+}
+
+.post-holder > h5{
+    color: #6b6b6b;
+    font-weight: 600;
+    padding-top: 3px;
+}
+
+.post-content > p{
+    padding: 0px 20px 20px 20px;
+}
+
+.about-page{
+    height: fit-content;
+    width: 250px;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin: 20px 20px;
+    border-radius: 10px;
+    padding: 20px; 
+}
+
+.explore-container2, .live-feeds{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 5px;
+}
+
+.explore-container2 > h4{
+    color: blue;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.explore-container2 > svg{
+    fill: blue;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.live-feeds > h4{
+    color: blue;
+    cursor: pointer;
+}
+
+.live-feeds > svg{
+    fill: blue;
+    cursor: pointer;
+}
+
+.about-page > p{
+    padding: 15px 0px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.create-account{
+    border: 0;
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    padding: 7px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login{
+    border: 0;
+    background-color: #ddd;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    padding: 7px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hashtags-page{ 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: fit-content;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+.hastags{
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hastags > h4{
+    color: blue;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.hastags > p{
+    color: #6b6b6b;
+    padding: 5px;
+}
+
+.news-page{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: fit-content;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.news-page > p{
+    padding-bottom: 20px;
+}
+
+.news-page > span{
+    padding-bottom: 20px;
+}
+
+.live-feeds-contanier{
+    height: fit-content;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.liveFeed{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.server-contanier{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.server-contanier > h4{
+    font-weight: 800;
+    padding: 10px 10px 10px 0px;
+}
+
+.server-contanier > p{
+    font-weight: 600;
+    color: #6b6b6b;
+    padding: 10px 10px 10px 0px;
+}
+
+.live-feeds-contanier > h3{
+    text-align: center;
+    padding: 10px 0px 10px 10px;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+}
+
+.server{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
+
+
+@media screen and (max-width: 770px){
+    .bio-page{
+        flex-wrap: wrap;
+    }
+}
