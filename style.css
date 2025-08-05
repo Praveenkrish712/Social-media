@@ -335,6 +335,7 @@ body{
     }
 
     .social-page, .about-page{
-        width: fit-content;
+        height: fit-content;
+        width: 700px;
     }
 }
